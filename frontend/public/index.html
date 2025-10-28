@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StrikeSense MVP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white font-sans flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-4xl mb-6 text-red-600 font-bold">StrikeSense</h1>
+
+  <div class="mb-4">
+    <p>Punches: <span id="punchCount">0</span></p>
+    <p>Average Speed: <span id="avgSpeed">0</span> m/s</p>
+  </div>
+
+  <button id="punchBtn" class="bg-red-600 px-6 py-3 rounded-lg hover:bg-red-700 transition">Add Punch</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

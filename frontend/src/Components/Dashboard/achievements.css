@@ -1,0 +1,59 @@
+/* achievements.css */
+.achievements-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+  z-index: 10;
+}
+
+.achievement-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 28, 28, 0.7);
+  border-radius: 12px;
+  padding: 12px 20px;
+  min-width: 200px;
+  text-align: center;
+  overflow: hidden;
+  animation: popIn 0.5s ease forwards;
+}
+
+.achievement-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,28,28,0.5) 0%, rgba(255,28,28,0) 70%);
+  pointer-events: none;
+  animation: glowPulse 1.2s infinite;
+}
+
+.achievement-content {
+  position: relative;
+  z-index: 2;
+  color: #ff1c1c;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff1c1c, 0 0 12px #ff1c1c;
+}
+
+.achievement-text {
+  font-size: 1.1rem;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 0.6; }
+}

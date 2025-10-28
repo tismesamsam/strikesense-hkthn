@@ -1,0 +1,52 @@
+{
+  "name": "TrainingSession",
+  "type": "object",
+  "properties": {
+    "duration_seconds": {
+      "type": "number",
+      "description": "Duration of the session in seconds"
+    },
+    "punch_count": {
+      "type": "number",
+      "description": "Total number of punches thrown"
+    },
+    "average_speed": {
+      "type": "number",
+      "description": "Average punch speed in punches per minute"
+    },
+    "max_speed": {
+      "type": "number",
+      "description": "Maximum punch speed achieved"
+    },
+    "power_score": {
+      "type": "number",
+      "description": "Average power score (0-100)"
+    },
+    "technique_score": {
+      "type": "number",
+      "description": "Technique score from AI analysis (0-100)"
+    },
+    "endurance_score": {
+      "type": "number",
+      "description": "Endurance score (0-100)"
+    },
+    "calories_burned": {
+      "type": "number",
+      "description": "Estimated calories burned"
+    },
+    "ai_feedback": {
+      "type": "string",
+      "description": "AI-generated feedback and analysis"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of the session"
+    }
+  },
+  "required": [
+    "duration_seconds",
+    "punch_count",
+    "session_date"
+  ]
+}
